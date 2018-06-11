@@ -31,7 +31,7 @@ inspec example help
 
 ```bash
 # Build the `inspec-hpe-oneview` then install:
-git clone https://github.com/mattray/inspec-hpe-oneview && cd inspec-hpe-oneview && gem build *gemspec && gem install *gem
+git clone https://github.com/inspec/inspec-hpe-oneview.git && cd inspec-hpe-oneview && gem build *gemspec && gem install *gem
 inspec example help
 ```
 
