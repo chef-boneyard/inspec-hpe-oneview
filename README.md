@@ -24,7 +24,7 @@ Then install the `inspec-hpe-oneview` plugin via `~/.inspec/plugins` or a gem bu
 git clone git@github.com:mattray/inspec-hpe-oneview ~/inspec-hpe-oneview
 mkdir -p ~/.inspec/plugins
 ln -s ~/inspec-hpe-oneview/ ~/.inspec/plugins/inspec-hpe-oneview
-inspec example help
+inspec oneview help
 ```
 
 ## * or build a gem: ##
@@ -32,7 +32,7 @@ inspec example help
 ```bash
 # Build the `inspec-hpe-oneview` then install:
 git clone https://github.com/inspec/inspec-hpe-oneview.git && cd inspec-hpe-oneview && gem build *gemspec && gem install *gem
-inspec example help
+inspec oneview help
 ```
 
 ## Oneview Settings File
@@ -42,7 +42,7 @@ This file requires the following information:
 | Parameter | Description | Example Value |
 |---|---|---|
 | url | URL to the Oneview server | https://192.168.1.93 |
-| user | Username to connect to Onwview with | myuser |
+| user | Username to connect to Oneview with | myuser |
 | password | Password associated with the specified user |
 | api_version | The API version to use. The default value is 200 | 300 |
 
@@ -67,7 +67,7 @@ api_version: 300
 A different settings file, with the same format, can be specified as an environment variable `INSPEC_ONEVIEW_SETTINGS`:
 
 ```bash
-INSPEC_ONEVIEW_SETTING"/path/to/another/file" inspec exec inspec-oneview
+INSPEC_ONEVIEW_SETTING="/path/to/another/file" inspec detect -t oneview://
 ```
 
 # Testing the Oneview API connection
@@ -115,6 +115,6 @@ At the time of writing there is only a single unit test.  If necessary a Rake ta
 $ bundle exec ruby -W -Ilib:test/unit test/unit/transports/oneview_test.rb
 ```
 
-# Code #
+## Code 
 
 InSpec uses ```chefstyle``` for code formatting.
