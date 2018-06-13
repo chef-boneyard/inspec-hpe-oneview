@@ -1,6 +1,6 @@
 # InSpec HPE Oneview Plugin
 
-This is the HPE Oneview plugin for [InSpec](https://inspec.io).
+This is the plugin for providing [InSpec](https://inspec.io) with HPE Oneview backend support.
 
 # Requirements #
 
