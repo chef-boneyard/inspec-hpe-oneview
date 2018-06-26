@@ -5,10 +5,7 @@ source 'https://rubygems.org'
 
 gemspec
 
-# Note this will require a train update which is easy to perform locally
-# leaving here for reference until a branch of train with the changes is 
-# available
-gem 'train', path: '/Users/spaterson/Documents/workspace/chef/train'
+gem 'train', '~> 1.4', '>= 1.4.15'
 
 group :test do
   gem 'bundler'
