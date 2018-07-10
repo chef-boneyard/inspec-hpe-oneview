@@ -21,7 +21,7 @@ Then install the `inspec-hpe-oneview` plugin via `~/.inspec/plugins` or a gem bu
 
 ```bash
 # Install `inspec-hpe-oneview` via a symlink:
-git clone git@github.com:inspec/inspec-hpe-oneview ~/inspec-hpe-oneview
+git clone https://github.com/inspec/inspec-hpe-oneview.git ~/inspec-hpe-oneview
 mkdir -p ~/.inspec/plugins
 ln -s ~/inspec-hpe-oneview/ ~/.inspec/plugins/inspec-hpe-oneview
 inspec oneview help
