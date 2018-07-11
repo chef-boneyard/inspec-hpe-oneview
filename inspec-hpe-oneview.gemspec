@@ -1,4 +1,3 @@
-
 # frozen_string_literal: true
 
 lib = File.expand_path('lib', __dir__)
@@ -19,8 +18,8 @@ Gem::Specification.new do |spec|
   spec.files = %w[
     README.md inspec-hpe-oneview.gemspec Gemfile
   ] + Dir.glob(
-    '{bin,docs,examples,lib,tasks,test}/**/*', File::FNM_DOTMATCH
-  ).reject { |f| File.directory?(f) }
+                 '{bin,docs,examples,lib,tasks,test}/**/*', File::FNM_DOTMATCH
+               ).reject { |f| File.directory?(f) }
 
   spec.require_paths = ['lib']
 
